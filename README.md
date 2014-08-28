@@ -12,7 +12,7 @@
 
 <p>Launch the command </p>
 
-<pre><code>>> show_me_a_film_of(argument,limit)
+<pre><code>>> show_me_a_film_about(argument,limit)
 </code></pre>
 
 <p>Instead of <i>argument</i> write the topic you want to build the movie onto. Instead of <i>limit</i> write the number of GIFs you want to download.</p>
