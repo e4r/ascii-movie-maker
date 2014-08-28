@@ -22,7 +22,7 @@ def extract_ascii_from_gif(gif_name,n_frames)
    page_markup = File.read('./page_markup.txt')
 
    0.upto(n_frames).each do |i|
-      %x[gifsicle animations/#{gif_name} '\##{i}' > images/animation_#{gif_name}#{i}.gif]
+      %x[gifsicle -w animations/#{gif_name} '\##{i}' > images/animation_#{gif_name}#{i}.gif]
       correct_page = page_markup.gsub("images/test.jpg","images/animation_#{gif_name}#{i}.gif")
    
       File.open './index.html','w' do |f|

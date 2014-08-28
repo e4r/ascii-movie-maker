@@ -81,7 +81,7 @@ def clear_animations!
 
 end
 
-def show_me_a_film_of(argument,limit)
+def show_me_a_film_about(argument,limit)
    clear_animations!
    #sanitize argument
    argument = argument.gsub(" ","+")
